@@ -1,0 +1,8 @@
+prefix=/home/student/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/devel
+
+Name: turtlebot_octomap
+Description: Description of turtlebot_octomap
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/student/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/devel/lib 
+Requires: 
