@@ -68,9 +68,6 @@ TrajectoryControlActionServer::~TrajectoryControlActionServer()
 {
 }
 
-
-
-
 void TrajectoryControlActionServer::odomMsgToStampedTransform(nav_msgs::Odometry pose_odometry, tf::StampedTransform& pose_stamped)
 {
 	pose_stamped.stamp_ = pose_odometry.header.stamp;
@@ -302,6 +299,7 @@ void TrajectoryControlActionServer::getRobotCommands(double displacement, tf::St
 
 	/* FILL THE MISSING CODE IN THIS FUNCTION */
 	/* HERE YOU NEED TO IMPLEMENT THE CONTROL LAWS OF THE INPUT-OUTPUT LINEARINZATION */
+        
 
 	geometry_msgs::PoseStamped poseR;
 	poseR.header.frame_id = robot_pose.frame_id_;
@@ -407,8 +405,8 @@ void TrajectoryControlActionServer::executeCallback(const trajectory_control_msg
 			feedback.cmd_vel.angular.z = angular_vel;
 			getWheelsCmdVel(linear_vel,angular_vel,robot_width,tracks_cmd);
 			//ROS_INFO("Robot tracks vel computed");
-			feedback.tracks_cmd.left = tracks_cmd.left;
-			feedback.tracks_cmd.right = tracks_cmd.right;
+			feedback.wheeled_cmd_vel.left = tracks_cmd.left;
+			feedback.wheeled_cmd_vel.right = tracks_cmd.right;
 			feedback.trajectory_error.x = poseB.position.x - real_robot_poseB_map.getOrigin().getX();
 			feedback.trajectory_error.y = poseB.position.y - real_robot_poseB_map.getOrigin().getY();
 			//as_->publishFeedback(feedback);
