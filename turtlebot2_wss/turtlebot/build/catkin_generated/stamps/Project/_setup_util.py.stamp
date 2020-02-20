@@ -262,7 +262,7 @@ if __name__ == '__main__':
             sys.exit(1)
 
         # environment at generation time
-        CMAKE_PREFIX_PATH = '/home/user001/turtlebot2_wss/turtlebot_interaction/devel;/home/user001/turtlebot2_wss/turtlebot_simulation/devel;/home/user001/turtlebot2_wss/turtlebot_msgs/devel;/home/user001/turtlebot2_wss/turtlebot/devel;/home/user001/ws_moveit/devel;/opt/ros/kinetic'.split(';')
+        CMAKE_PREFIX_PATH = '/home/user001/ROCO506/turtlebot2_wss/turtlebot_msgs/devel;/home/user001/ws_moveit/devel;/opt/ros/kinetic'.split(';')
         # prepend current workspace if not already part of CPP
         base_path = os.path.dirname(__file__)
         if base_path not in CMAKE_PREFIX_PATH:

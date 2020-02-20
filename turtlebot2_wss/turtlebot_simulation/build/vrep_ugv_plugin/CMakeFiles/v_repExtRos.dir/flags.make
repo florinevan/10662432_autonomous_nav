@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_PACKAGE_NAME=\"vrep_ugv_plugin\" -Dv_repExtRos_EXPORTS
 
-CXX_INCLUDES = -I/home/user001/turtlebot2_wss/turtlebot_simulation/src/vrep_ugv_plugin/include -I/home/user001/turtlebot2_wss/turtlebot_simulation/devel/.private/vrep_common/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
+CXX_INCLUDES = -I/home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/src/vrep_ugv_plugin/include -I/home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/devel/.private/vrep_common/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
 

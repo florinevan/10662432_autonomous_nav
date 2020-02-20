@@ -67,14 +67,14 @@ set(vrep_common_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(vrep_common_SOURCE_PREFIX /home/user001/turtlebot2_wss/turtlebot_simulation/src/vrep_common)
-  set(vrep_common_DEVEL_PREFIX /home/user001/turtlebot2_wss/turtlebot_simulation/devel/.private/vrep_common)
+  set(vrep_common_SOURCE_PREFIX /home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/src/vrep_common)
+  set(vrep_common_DEVEL_PREFIX /home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/devel/.private/vrep_common)
   set(vrep_common_INSTALL_PREFIX "")
   set(vrep_common_PREFIX ${vrep_common_DEVEL_PREFIX})
 else()
   set(vrep_common_SOURCE_PREFIX "")
   set(vrep_common_DEVEL_PREFIX "")
-  set(vrep_common_INSTALL_PREFIX /home/user001/turtlebot2_wss/turtlebot_simulation/install)
+  set(vrep_common_INSTALL_PREFIX /home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/install)
   set(vrep_common_PREFIX ${vrep_common_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(vrep_common_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/user001/turtlebot2_wss/turtlebot_simulation/devel/.private/vrep_common/include " STREQUAL " ")
+if(NOT "/home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/devel/.private/vrep_common/include " STREQUAL " ")
   set(vrep_common_INCLUDE_DIRS "")
-  set(_include_dirs "/home/user001/turtlebot2_wss/turtlebot_simulation/devel/.private/vrep_common/include")
+  set(_include_dirs "/home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/devel/.private/vrep_common/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT "http://www.coppeliarobotics.com " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/user001/turtlebot2_wss/turtlebot_simulation/devel/.private/vrep_co
         message(FATAL_ERROR "Project 'vrep_common' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'vrep_common' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/user001/turtlebot2_wss/turtlebot_simulation/src/vrep_common/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'vrep_common' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/src/vrep_common/${idir}'.  ${_report}")
     endif()
     _list_append_unique(vrep_common_INCLUDE_DIRS ${include})
   endforeach()
@@ -129,7 +129,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/user001/turtlebot2_wss/turtlebot_simulation/devel/.private/vrep_common/lib;/home/user001/turtlebot2_wss/turtlebot_interaction/devel/lib;/home/user001/turtlebot2_wss/turtlebot_simulation/devel/lib;/home/user001/turtlebot2_wss/turtlebot_msgs/devel/lib;/home/user001/turtlebot2_wss/turtlebot/devel/lib;/home/user001/ws_moveit/devel/lib;/opt/ros/kinetic/lib)
+    foreach(path /home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/devel/.private/vrep_common/lib;/home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/devel/lib;/home/user001/ROCO506/turtlebot2_wss/turtlebot_interaction/devel/lib;/home/user001/ROCO506/turtlebot2_wss/turtlebot_msgs/devel/lib;/home/user001/ws_moveit/devel/lib;/opt/ros/kinetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

@@ -1,8 +1,8 @@
-prefix=/home/user001/turtlebot2_wss/turtlebot/install
+prefix=/home/user001/ROCO506/turtlebot2_wss/turtlebot/install
 
 Name: turtlebot_teleop_keyboard
 Description: Description of turtlebot_teleop_keyboard
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/user001/turtlebot2_wss/turtlebot/install/lib 
+Libs: -L/home/user001/ROCO506/turtlebot2_wss/turtlebot/install/lib 
 Requires: 

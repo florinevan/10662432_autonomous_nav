@@ -7,4 +7,6 @@
 # new environment variables
 
 # modified environment variables
-export PWD="/home/student/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build"
+export LD_LIBRARY_PATH="/home/user001/ROCO506/turtlebot2_wss/turtlebot_msgs/devel/lib:/home/user001/ws_moveit/devel/lib:/opt/ros/kinetic/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu"
+export PKG_CONFIG_PATH="/home/user001/ROCO506/turtlebot2_wss/turtlebot_msgs/devel/lib/pkgconfig:/home/user001/ws_moveit/devel/lib/pkgconfig:/opt/ros/kinetic/lib/pkgconfig:/opt/ros/kinetic/lib/x86_64-linux-gnu/pkgconfig"
+export PWD="/home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build"
