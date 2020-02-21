@@ -7,6 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export LD_LIBRARY_PATH="/home/user001/ROCO506/turtlebot2_wss/turtlebot_msgs/devel/lib:/home/user001/ws_moveit/devel/lib:/opt/ros/kinetic/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu"
-export PKG_CONFIG_PATH="/home/user001/ROCO506/turtlebot2_wss/turtlebot_msgs/devel/lib/pkgconfig:/home/user001/ws_moveit/devel/lib/pkgconfig:/opt/ros/kinetic/lib/pkgconfig:/opt/ros/kinetic/lib/x86_64-linux-gnu/pkgconfig"
+export CMAKE_PREFIX_PATH="/home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/devel:$CMAKE_PREFIX_PATH"
 export PWD="/home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/src:$ROS_PACKAGE_PATH"
