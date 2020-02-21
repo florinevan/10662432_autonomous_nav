@@ -68,6 +68,9 @@ TrajectoryControlActionServer::~TrajectoryControlActionServer()
 {
 }
 
+
+
+
 void TrajectoryControlActionServer::odomMsgToStampedTransform(nav_msgs::Odometry pose_odometry, tf::StampedTransform& pose_stamped)
 {
 	pose_stamped.stamp_ = pose_odometry.header.stamp;
@@ -297,9 +300,23 @@ void TrajectoryControlActionServer::getRobotCommands(double displacement, tf::St
 	double roll, pitch, yaw;
 	robot_pose.getBasis().getRPY(roll,pitch,yaw);
 
-	/* FILL THE MISSING CODE IN THIS FUNCTION */
-	/* HERE YOU NEED TO IMPLEMENT THE CONTROL LAWS OF THE INPUT-OUTPUT LINEARINZATION */
-        
+ 	/* Inverted T matrix => T(-1) */
+	// A dans mon cours
+	double a = cos(yaw);
+	double b = sin (yaw);
+	double c = -sin(yaw)/displacement;
+	double d = cos(yaw)/displacement;
+
+ 	/* PID controller */
+	// C dans mon cours
+	double u1 = velB.linear.x + k1*(poseB.position.x - robot_pose.getOrigin().getX());
+	double u2 = velB.linear.y + k2*(poseB.position.y - robot_pose.getOrigin().getY());
+
+	/*  u                u1
+	  [ w ]  = T(-1) * [ u2 ] */
+	// B dans mon cours
+	linear_vel = (a*u1) + (b*u2);
+	angular_vel = (c*u1) + (d*u2);
 
 	geometry_msgs::PoseStamped poseR;
 	poseR.header.frame_id = robot_pose.frame_id_;

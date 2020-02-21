@@ -1517,6 +1517,84 @@ topic_tools_generate_messages_nodejs/fast:
 	$(MAKE) -f stigmergy_planner/CMakeFiles/topic_tools_generate_messages_nodejs.dir/build.make stigmergy_planner/CMakeFiles/topic_tools_generate_messages_nodejs.dir/build
 .PHONY : topic_tools_generate_messages_nodejs/fast
 
+#=============================================================================
+# Target rules for targets named nifti_robot_driver_msgs_generate_messages_nodejs
+
+# Build rule for target.
+nifti_robot_driver_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 nifti_robot_driver_msgs_generate_messages_nodejs
+.PHONY : nifti_robot_driver_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+nifti_robot_driver_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f trajectory_control/CMakeFiles/nifti_robot_driver_msgs_generate_messages_nodejs.dir/build.make trajectory_control/CMakeFiles/nifti_robot_driver_msgs_generate_messages_nodejs.dir/build
+.PHONY : nifti_robot_driver_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named trajectory_control
+
+# Build rule for target.
+trajectory_control: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 trajectory_control
+.PHONY : trajectory_control
+
+# fast build rule for target.
+trajectory_control/fast:
+	$(MAKE) -f trajectory_control/CMakeFiles/trajectory_control.dir/build.make trajectory_control/CMakeFiles/trajectory_control.dir/build
+.PHONY : trajectory_control/fast
+
+#=============================================================================
+# Target rules for targets named nifti_robot_driver_msgs_generate_messages_eus
+
+# Build rule for target.
+nifti_robot_driver_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 nifti_robot_driver_msgs_generate_messages_eus
+.PHONY : nifti_robot_driver_msgs_generate_messages_eus
+
+# fast build rule for target.
+nifti_robot_driver_msgs_generate_messages_eus/fast:
+	$(MAKE) -f trajectory_control/CMakeFiles/nifti_robot_driver_msgs_generate_messages_eus.dir/build.make trajectory_control/CMakeFiles/nifti_robot_driver_msgs_generate_messages_eus.dir/build
+.PHONY : nifti_robot_driver_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named nifti_robot_driver_msgs_generate_messages_cpp
+
+# Build rule for target.
+nifti_robot_driver_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 nifti_robot_driver_msgs_generate_messages_cpp
+.PHONY : nifti_robot_driver_msgs_generate_messages_cpp
+
+# fast build rule for target.
+nifti_robot_driver_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f trajectory_control/CMakeFiles/nifti_robot_driver_msgs_generate_messages_cpp.dir/build.make trajectory_control/CMakeFiles/nifti_robot_driver_msgs_generate_messages_cpp.dir/build
+.PHONY : nifti_robot_driver_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named nifti_robot_driver_msgs_generate_messages_lisp
+
+# Build rule for target.
+nifti_robot_driver_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 nifti_robot_driver_msgs_generate_messages_lisp
+.PHONY : nifti_robot_driver_msgs_generate_messages_lisp
+
+# fast build rule for target.
+nifti_robot_driver_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f trajectory_control/CMakeFiles/nifti_robot_driver_msgs_generate_messages_lisp.dir/build.make trajectory_control/CMakeFiles/nifti_robot_driver_msgs_generate_messages_lisp.dir/build
+.PHONY : nifti_robot_driver_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named nifti_robot_driver_msgs_generate_messages_py
+
+# Build rule for target.
+nifti_robot_driver_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 nifti_robot_driver_msgs_generate_messages_py
+.PHONY : nifti_robot_driver_msgs_generate_messages_py
+
+# fast build rule for target.
+nifti_robot_driver_msgs_generate_messages_py/fast:
+	$(MAKE) -f trajectory_control/CMakeFiles/nifti_robot_driver_msgs_generate_messages_py.dir/build.make trajectory_control/CMakeFiles/nifti_robot_driver_msgs_generate_messages_py.dir/build
+.PHONY : nifti_robot_driver_msgs_generate_messages_py/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1634,6 +1712,12 @@ help:
 	@echo "... topic_tools_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... topic_tools_generate_messages_nodejs"
+	@echo "... nifti_robot_driver_msgs_generate_messages_nodejs"
+	@echo "... trajectory_control"
+	@echo "... nifti_robot_driver_msgs_generate_messages_eus"
+	@echo "... nifti_robot_driver_msgs_generate_messages_cpp"
+	@echo "... nifti_robot_driver_msgs_generate_messages_lisp"
+	@echo "... nifti_robot_driver_msgs_generate_messages_py"
 .PHONY : help
 
 
