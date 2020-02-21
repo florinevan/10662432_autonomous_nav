@@ -18,9 +18,9 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/src/stigmergy_planner/include"
-  "/home/user001/ROCO506/turtlebot2_wss/turtlebot_msgs/devel/include"
   "/opt/ros/kinetic/include"
   "/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
+  "/home/user001/ROCO506/turtlebot2_wss/turtlebot_msgs/devel/include"
   "/usr/include/eigen3"
   "/usr/include/pcl-1.7"
   "/usr/include/ni"

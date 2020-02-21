@@ -5,6 +5,7 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs(gtest)
+subdirs(odom_logger)
 subdirs(stigmergy_planner)
 subdirs(trajectory_control)
 subdirs(turtlebot_octomap)

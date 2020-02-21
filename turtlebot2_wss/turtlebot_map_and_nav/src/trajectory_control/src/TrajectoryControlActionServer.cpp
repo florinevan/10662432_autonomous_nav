@@ -426,7 +426,7 @@ void TrajectoryControlActionServer::executeCallback(const trajectory_control_msg
 			feedback.wheeled_cmd_vel.right = tracks_cmd.right;
 			feedback.trajectory_error.x = poseB.position.x - real_robot_poseB_map.getOrigin().getX();
 			feedback.trajectory_error.y = poseB.position.y - real_robot_poseB_map.getOrigin().getY();
-			//as_->publishFeedback(feedback);
+			as_->publishFeedback(feedback);
 			tracks_vel_cmd_pub.publish(tracks_cmd);
 			//ROS_INFO("Robot tracks vel published");
 			rate.sleep();
