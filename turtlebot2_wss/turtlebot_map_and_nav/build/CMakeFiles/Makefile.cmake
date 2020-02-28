@@ -19,6 +19,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "stigmergy_planner/catkin_generated/package.cmake"
   "trajectory_control/catkin_generated/ordered_paths.cmake"
   "trajectory_control/catkin_generated/package.cmake"
+  "turtlebot_navigation/catkin_generated/ordered_paths.cmake"
+  "turtlebot_navigation/catkin_generated/package.cmake"
   "turtlebot_octomap/catkin_generated/ordered_paths.cmake"
   "turtlebot_octomap/catkin_generated/package.cmake"
   "/home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/src/CMakeLists.txt"
@@ -28,6 +30,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/src/stigmergy_planner/package.xml"
   "/home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/src/trajectory_control/CMakeLists.txt"
   "/home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/src/trajectory_control/package.xml"
+  "/home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/src/turtlebot_navigation/CMakeLists.txt"
+  "/home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/src/turtlebot_navigation/package.xml"
   "/home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/src/turtlebot_octomap/CMakeLists.txt"
   "/home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/src/turtlebot_octomap/package.xml"
   "/home/user001/ROCO506/turtlebot2_wss/turtlebot_msgs/devel/share/nifti_robot_driver_msgs/cmake/nifti_robot_driver_msgs-msg-extras.cmake"
@@ -142,6 +146,11 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/ros/kinetic/share/message_generation/cmake/message_generationConfig.cmake"
   "/opt/ros/kinetic/share/message_runtime/cmake/message_runtimeConfig-version.cmake"
   "/opt/ros/kinetic/share/message_runtime/cmake/message_runtimeConfig.cmake"
+  "/opt/ros/kinetic/share/move_base/cmake/move_baseConfig-version.cmake"
+  "/opt/ros/kinetic/share/move_base/cmake/move_baseConfig.cmake"
+  "/opt/ros/kinetic/share/move_base_msgs/cmake/move_base_msgs-msg-extras.cmake"
+  "/opt/ros/kinetic/share/move_base_msgs/cmake/move_base_msgsConfig-version.cmake"
+  "/opt/ros/kinetic/share/move_base_msgs/cmake/move_base_msgsConfig.cmake"
   "/opt/ros/kinetic/share/nav_msgs/cmake/nav_msgs-msg-extras.cmake"
   "/opt/ros/kinetic/share/nav_msgs/cmake/nav_msgsConfig-version.cmake"
   "/opt/ros/kinetic/share/nav_msgs/cmake/nav_msgsConfig.cmake"
@@ -279,6 +288,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "stigmergy_planner/CMakeFiles/CMakeDirectoryInformation.cmake"
   "trajectory_control/CMakeFiles/CMakeDirectoryInformation.cmake"
   "turtlebot_octomap/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "turtlebot_navigation/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -394,4 +404,10 @@ set(CMAKE_DEPEND_INFO_FILES
   "trajectory_control/CMakeFiles/nifti_robot_driver_msgs_generate_messages_cpp.dir/DependInfo.cmake"
   "trajectory_control/CMakeFiles/nifti_robot_driver_msgs_generate_messages_lisp.dir/DependInfo.cmake"
   "trajectory_control/CMakeFiles/nifti_robot_driver_msgs_generate_messages_py.dir/DependInfo.cmake"
+  "turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/DependInfo.cmake"
+  "turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_eus.dir/DependInfo.cmake"
+  "turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/DependInfo.cmake"
+  "turtlebot_navigation/CMakeFiles/move_base_gencfg.dir/DependInfo.cmake"
+  "turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_nodejs.dir/DependInfo.cmake"
+  "turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_py.dir/DependInfo.cmake"
   )

@@ -158,3 +158,16 @@
 /home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build/turtlebot_octomap/CMakeFiles/install/local.dir
 /home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build/turtlebot_octomap/CMakeFiles/test.dir
 /home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build/turtlebot_octomap/CMakeFiles/edit_cache.dir
+/home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build/turtlebot_navigation/CMakeFiles/install.dir
+/home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build/turtlebot_navigation/CMakeFiles/rebuild_cache.dir
+/home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build/turtlebot_navigation/CMakeFiles/list_install_components.dir
+/home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build/turtlebot_navigation/CMakeFiles/install/strip.dir
+/home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build/turtlebot_navigation/CMakeFiles/install/local.dir
+/home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build/turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_cpp.dir
+/home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build/turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_eus.dir
+/home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build/turtlebot_navigation/CMakeFiles/test.dir
+/home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build/turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_lisp.dir
+/home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build/turtlebot_navigation/CMakeFiles/move_base_gencfg.dir
+/home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build/turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_nodejs.dir
+/home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build/turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_py.dir
+/home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build/turtlebot_navigation/CMakeFiles/edit_cache.dir

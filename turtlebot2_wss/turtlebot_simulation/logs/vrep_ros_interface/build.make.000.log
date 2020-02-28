@@ -1,7 +1,7 @@
 [35m[1mScanning dependencies of target generate_ros_code[0m
-[  4%] [34m[1mGenerating generated/pub.cpp[0m
-[  9%] [34m[1mGenerating generated/adv.cpp[0m
 [ 14%] [34m[1mGenerating generated/ros_msg_io.h[0m
+[ 14%] [34m[1mGenerating generated/pub.cpp[0m
+[ 14%] [34m[1mGenerating generated/adv.cpp[0m
 WARNING: bad msg: driver_base/ConfigString
 WARNING: bad msg: driver_base/ConfigString
 WARNING: bad msg: driver_base/ConfigString
@@ -10,21 +10,21 @@ WARNING: bad msg: driver_base/ConfigValue
 WARNING: bad msg: driver_base/ConfigValue
 WARNING: bad msg: driver_base/SensorLevels
 WARNING: bad msg: driver_base/SensorLevels
-WARNING: bad msg: driver_base/SensorLevels
-WARNING: bad msg: driver_base/ConfigString
-WARNING: bad msg: driver_base/ConfigValue
 WARNING: bad msg: driver_base/SensorLevels
 [ 19%] [34m[1mGenerating generated/srvsrv.cpp[0m
 [ 23%] [34m[1mGenerating generated/ros_srv_io.cpp[0m
+WARNING: bad msg: driver_base/ConfigString
+WARNING: bad msg: driver_base/ConfigValue
+WARNING: bad msg: driver_base/SensorLevels
 [ 28%] [34m[1mGenerating generated/srvcli.cpp[0m
 [ 33%] [34m[1mGenerating generated/ros_msg_io.cpp[0m
 WARNING: bad msg: driver_base/ConfigString
 WARNING: bad msg: driver_base/ConfigValue
 WARNING: bad msg: driver_base/SensorLevels
+[ 38%] [34m[1mGenerating generated/sub.cpp[0m
 WARNING: bad msg: driver_base/ConfigString
 WARNING: bad msg: driver_base/ConfigValue
 WARNING: bad msg: driver_base/SensorLevels
-[ 38%] [34m[1mGenerating generated/sub.cpp[0m
 WARNING: bad msg: driver_base/ConfigString
 WARNING: bad msg: driver_base/ConfigValue
 WARNING: bad msg: driver_base/SensorLevels
@@ -47,7 +47,7 @@ python /home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/src/vrep_ros_in
 [ 61%] [32mBuilding CXX object CMakeFiles/v_repExtRosInterface.dir/external/v_repPlusPlus/Plugin.cpp.o[0m
 [ 66%] [32mBuilding CXX object CMakeFiles/v_repExtRosInterface.dir/generated/stubs.cpp.o[0m
 [ 71%] [32mBuilding CXX object CMakeFiles/v_repExtRosInterface.dir/src/ros_msg_builtin_io.cpp.o[0m
-[ 76%] [32mBuilding CXX object CMakeFiles/v_repExtRosInterface.dir/home/user001/Programs/V-REP_PRO_EDU_V3_6_0/programming/common/v_repLib.cpp.o[0m
+[ 76%] [32mBuilding CXX object CMakeFiles/v_repExtRosInterface.dir/home/user001/Programs/V-REP_PRO_EDU_V3_6_2/programming/common/v_repLib.cpp.o[0m
 [ 80%] [32mBuilding CXX object CMakeFiles/v_repExtRosInterface.dir/generated/ros_msg_io.cpp.o[0m
 [ 85%] [32mBuilding CXX object CMakeFiles/v_repExtRosInterface.dir/generated/ros_srv_io.cpp.o[0m
 [ 90%] [32m[1mLinking CXX shared library /home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/devel/.private/vrep_ros_interface/lib/libv_repExtRosInterface.so[0m
