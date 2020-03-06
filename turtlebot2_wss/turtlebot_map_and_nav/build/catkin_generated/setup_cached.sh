@@ -8,8 +8,6 @@
 
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/devel/lib:$LD_LIBRARY_PATH"
-export PKG_CONFIG_PATH="/home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD="/home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build"
 export ROSLISP_PACKAGE_DIRECTORIES="/home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
 export ROS_PACKAGE_PATH="/home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/src:$ROS_PACKAGE_PATH"
