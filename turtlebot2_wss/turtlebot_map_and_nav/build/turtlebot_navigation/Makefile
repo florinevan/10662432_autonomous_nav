@@ -79,6 +79,17 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
@@ -121,17 +132,6 @@ test:
 test/fast: test
 
 .PHONY : test/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -179,6 +179,21 @@ move_base_msgs_generate_messages_cpp: turtlebot_navigation/CMakeFiles/move_base_
 move_base_msgs_generate_messages_cpp/fast:
 	cd /home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build && $(MAKE) -f turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/build.make turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/build
 .PHONY : move_base_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+turtlebot_navigation/CMakeFiles/move_base.dir/rule:
+	cd /home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot_navigation/CMakeFiles/move_base.dir/rule
+.PHONY : turtlebot_navigation/CMakeFiles/move_base.dir/rule
+
+# Convenience name for target.
+move_base: turtlebot_navigation/CMakeFiles/move_base.dir/rule
+
+.PHONY : move_base
+
+# fast build rule for target.
+move_base/fast:
+	cd /home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build && $(MAKE) -f turtlebot_navigation/CMakeFiles/move_base.dir/build.make turtlebot_navigation/CMakeFiles/move_base.dir/build
+.PHONY : move_base/fast
 
 # Convenience name for target.
 turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_eus.dir/rule:
@@ -255,6 +270,33 @@ move_base_msgs_generate_messages_py/fast:
 	cd /home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build && $(MAKE) -f turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_py.dir/build.make turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_py.dir/build
 .PHONY : move_base_msgs_generate_messages_py/fast
 
+src/NavigationStack.o: src/NavigationStack.cpp.o
+
+.PHONY : src/NavigationStack.o
+
+# target to build an object file
+src/NavigationStack.cpp.o:
+	cd /home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build && $(MAKE) -f turtlebot_navigation/CMakeFiles/move_base.dir/build.make turtlebot_navigation/CMakeFiles/move_base.dir/src/NavigationStack.cpp.o
+.PHONY : src/NavigationStack.cpp.o
+
+src/NavigationStack.i: src/NavigationStack.cpp.i
+
+.PHONY : src/NavigationStack.i
+
+# target to preprocess a source file
+src/NavigationStack.cpp.i:
+	cd /home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build && $(MAKE) -f turtlebot_navigation/CMakeFiles/move_base.dir/build.make turtlebot_navigation/CMakeFiles/move_base.dir/src/NavigationStack.cpp.i
+.PHONY : src/NavigationStack.cpp.i
+
+src/NavigationStack.s: src/NavigationStack.cpp.s
+
+.PHONY : src/NavigationStack.s
+
+# target to generate assembly for a file
+src/NavigationStack.cpp.s:
+	cd /home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build && $(MAKE) -f turtlebot_navigation/CMakeFiles/move_base.dir/build.make turtlebot_navigation/CMakeFiles/move_base.dir/src/NavigationStack.cpp.s
+.PHONY : src/NavigationStack.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -263,17 +305,21 @@ help:
 	@echo "... depend"
 	@echo "... install"
 	@echo "... rebuild_cache"
+	@echo "... edit_cache"
 	@echo "... list_install_components"
 	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... move_base_msgs_generate_messages_cpp"
+	@echo "... move_base"
 	@echo "... move_base_msgs_generate_messages_eus"
 	@echo "... test"
 	@echo "... move_base_msgs_generate_messages_lisp"
 	@echo "... move_base_gencfg"
 	@echo "... move_base_msgs_generate_messages_nodejs"
 	@echo "... move_base_msgs_generate_messages_py"
-	@echo "... edit_cache"
+	@echo "... src/NavigationStack.o"
+	@echo "... src/NavigationStack.i"
+	@echo "... src/NavigationStack.s"
 .PHONY : help
 
 

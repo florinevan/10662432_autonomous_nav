@@ -1622,6 +1622,19 @@ move_base_msgs_generate_messages_cpp/fast:
 .PHONY : move_base_msgs_generate_messages_cpp/fast
 
 #=============================================================================
+# Target rules for targets named move_base
+
+# Build rule for target.
+move_base: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 move_base
+.PHONY : move_base
+
+# fast build rule for target.
+move_base/fast:
+	$(MAKE) -f turtlebot_navigation/CMakeFiles/move_base.dir/build.make turtlebot_navigation/CMakeFiles/move_base.dir/build
+.PHONY : move_base/fast
+
+#=============================================================================
 # Target rules for targets named move_base_msgs_generate_messages_eus
 
 # Build rule for target.
@@ -1811,6 +1824,7 @@ help:
 	@echo "... nifti_robot_driver_msgs_generate_messages_lisp"
 	@echo "... nifti_robot_driver_msgs_generate_messages_py"
 	@echo "... move_base_msgs_generate_messages_cpp"
+	@echo "... move_base"
 	@echo "... move_base_msgs_generate_messages_eus"
 	@echo "... move_base_msgs_generate_messages_lisp"
 	@echo "... move_base_gencfg"

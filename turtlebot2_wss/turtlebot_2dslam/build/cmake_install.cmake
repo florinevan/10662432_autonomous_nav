@@ -117,7 +117,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/user001/ROCO506/turtlebot2_wss/turtlebot_2dslam/build/gtest/cmake_install.cmake")
-  include("/home/user001/ROCO506/turtlebot2_wss/turtlebot_2dslam/build/open_karto/cmake_install.cmake")
   include("/home/user001/ROCO506/turtlebot2_wss/turtlebot_2dslam/build/turtlebot_hector_mapping/cmake_install.cmake")
   include("/home/user001/ROCO506/turtlebot2_wss/turtlebot_2dslam/build/turtlebot_gmapping/cmake_install.cmake")
   include("/home/user001/ROCO506/turtlebot2_wss/turtlebot_2dslam/build/turtlebot_slam_karto/cmake_install.cmake")

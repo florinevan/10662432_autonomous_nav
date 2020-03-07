@@ -482,7 +482,7 @@ odom_logger/CMakeFiles/trajectory_error_logger.dir/all: odom_logger/CMakeFiles/n
 odom_logger/CMakeFiles/trajectory_error_logger.dir/all: odom_logger/CMakeFiles/_catkin_empty_exported_target.dir/all
 	$(MAKE) -f odom_logger/CMakeFiles/trajectory_error_logger.dir/build.make odom_logger/CMakeFiles/trajectory_error_logger.dir/depend
 	$(MAKE) -f odom_logger/CMakeFiles/trajectory_error_logger.dir/build.make odom_logger/CMakeFiles/trajectory_error_logger.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build/CMakeFiles --progress-num=16,17 "Built target trajectory_error_logger"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build/CMakeFiles --progress-num=18,19 "Built target trajectory_error_logger"
 .PHONY : odom_logger/CMakeFiles/trajectory_error_logger.dir/all
 
 # Include target in all.
@@ -1875,7 +1875,7 @@ clean: stigmergy_planner/CMakeFiles/std_srvs_generate_messages_cpp.dir/clean
 stigmergy_planner/CMakeFiles/stigmergy_planner.dir/all:
 	$(MAKE) -f stigmergy_planner/CMakeFiles/stigmergy_planner.dir/build.make stigmergy_planner/CMakeFiles/stigmergy_planner.dir/depend
 	$(MAKE) -f stigmergy_planner/CMakeFiles/stigmergy_planner.dir/build.make stigmergy_planner/CMakeFiles/stigmergy_planner.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build/CMakeFiles --progress-num=12,13 "Built target stigmergy_planner"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build/CMakeFiles --progress-num=14,15 "Built target stigmergy_planner"
 .PHONY : stigmergy_planner/CMakeFiles/stigmergy_planner.dir/all
 
 # Include target in all.
@@ -3760,7 +3760,7 @@ trajectory_control/CMakeFiles/trajectory_control.dir/all: trajectory_control/CMa
 trajectory_control/CMakeFiles/trajectory_control.dir/all: trajectory_control/CMakeFiles/nifti_robot_driver_msgs_generate_messages_py.dir/all
 	$(MAKE) -f trajectory_control/CMakeFiles/trajectory_control.dir/build.make trajectory_control/CMakeFiles/trajectory_control.dir/depend
 	$(MAKE) -f trajectory_control/CMakeFiles/trajectory_control.dir/build.make trajectory_control/CMakeFiles/trajectory_control.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build/CMakeFiles --progress-num=14,15 "Built target trajectory_control"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build/CMakeFiles --progress-num=16,17 "Built target trajectory_control"
 .PHONY : trajectory_control/CMakeFiles/trajectory_control.dir/all
 
 # Include target in all.
@@ -3940,12 +3940,13 @@ turtlebot_octomap/preinstall:
 # Directory level rules for directory turtlebot_navigation
 
 # Convenience name for "all" pass in the directory.
-turtlebot_navigation/all:
+turtlebot_navigation/all: turtlebot_navigation/CMakeFiles/move_base.dir/all
 
 .PHONY : turtlebot_navigation/all
 
 # Convenience name for "clean" pass in the directory.
 turtlebot_navigation/clean: turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/clean
+turtlebot_navigation/clean: turtlebot_navigation/CMakeFiles/move_base.dir/clean
 turtlebot_navigation/clean: turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_eus.dir/clean
 turtlebot_navigation/clean: turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/clean
 turtlebot_navigation/clean: turtlebot_navigation/CMakeFiles/move_base_gencfg.dir/clean
@@ -3988,6 +3989,110 @@ turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/clean:
 
 # clean rule for target.
 clean: turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target turtlebot_navigation/CMakeFiles/move_base.dir
+
+# All Build rule for target.
+turtlebot_navigation/CMakeFiles/move_base.dir/all: odom_logger/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: odom_logger/CMakeFiles/roscpp_generate_messages_py.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: odom_logger/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: odom_logger/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: odom_logger/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: odom_logger/CMakeFiles/roscpp_generate_messages_eus.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: odom_logger/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: odom_logger/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: odom_logger/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: odom_logger/CMakeFiles/std_msgs_generate_messages_py.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: odom_logger/CMakeFiles/nav_msgs_generate_messages_eus.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: odom_logger/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: odom_logger/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: odom_logger/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: odom_logger/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: odom_logger/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: odom_logger/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: odom_logger/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: odom_logger/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: odom_logger/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: odom_logger/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: odom_logger/CMakeFiles/nav_msgs_generate_messages_lisp.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: odom_logger/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: odom_logger/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: odom_logger/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: odom_logger/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: odom_logger/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: odom_logger/CMakeFiles/nav_msgs_generate_messages_cpp.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: odom_logger/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: odom_logger/CMakeFiles/nav_msgs_generate_messages_py.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: odom_logger/CMakeFiles/_catkin_empty_exported_target.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: stigmergy_planner/CMakeFiles/tf2_msgs_generate_messages_py.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: stigmergy_planner/CMakeFiles/tf_generate_messages_lisp.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: stigmergy_planner/CMakeFiles/dynamic_reconfigure_gencfg.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: stigmergy_planner/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: stigmergy_planner/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: stigmergy_planner/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: stigmergy_planner/CMakeFiles/actionlib_generate_messages_lisp.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: stigmergy_planner/CMakeFiles/actionlib_generate_messages_eus.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: stigmergy_planner/CMakeFiles/tf_generate_messages_cpp.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: stigmergy_planner/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: stigmergy_planner/CMakeFiles/actionlib_generate_messages_cpp.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: stigmergy_planner/CMakeFiles/tf_generate_messages_eus.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: stigmergy_planner/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: stigmergy_planner/CMakeFiles/actionlib_generate_messages_py.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: stigmergy_planner/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: stigmergy_planner/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: stigmergy_planner/CMakeFiles/actionlib_generate_messages_nodejs.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: stigmergy_planner/CMakeFiles/tf_generate_messages_py.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: stigmergy_planner/CMakeFiles/tf_generate_messages_nodejs.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: stigmergy_planner/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: stigmergy_planner/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: stigmergy_planner/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: stigmergy_planner/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: stigmergy_planner/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: stigmergy_planner/CMakeFiles/tf2_msgs_generate_messages_eus.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: stigmergy_planner/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: trajectory_control/CMakeFiles/nifti_robot_driver_msgs_generate_messages_nodejs.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: trajectory_control/CMakeFiles/nifti_robot_driver_msgs_generate_messages_eus.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: trajectory_control/CMakeFiles/nifti_robot_driver_msgs_generate_messages_cpp.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: trajectory_control/CMakeFiles/nifti_robot_driver_msgs_generate_messages_lisp.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: trajectory_control/CMakeFiles/nifti_robot_driver_msgs_generate_messages_py.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_eus.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: turtlebot_navigation/CMakeFiles/move_base_gencfg.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_nodejs.dir/all
+turtlebot_navigation/CMakeFiles/move_base.dir/all: turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_py.dir/all
+	$(MAKE) -f turtlebot_navigation/CMakeFiles/move_base.dir/build.make turtlebot_navigation/CMakeFiles/move_base.dir/depend
+	$(MAKE) -f turtlebot_navigation/CMakeFiles/move_base.dir/build.make turtlebot_navigation/CMakeFiles/move_base.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build/CMakeFiles --progress-num=12,13 "Built target move_base"
+.PHONY : turtlebot_navigation/CMakeFiles/move_base.dir/all
+
+# Include target in all.
+all: turtlebot_navigation/CMakeFiles/move_base.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+turtlebot_navigation/CMakeFiles/move_base.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 turtlebot_navigation/CMakeFiles/move_base.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build/CMakeFiles 0
+.PHONY : turtlebot_navigation/CMakeFiles/move_base.dir/rule
+
+# Convenience name for target.
+move_base: turtlebot_navigation/CMakeFiles/move_base.dir/rule
+
+.PHONY : move_base
+
+# clean rule for target.
+turtlebot_navigation/CMakeFiles/move_base.dir/clean:
+	$(MAKE) -f turtlebot_navigation/CMakeFiles/move_base.dir/build.make turtlebot_navigation/CMakeFiles/move_base.dir/clean
+.PHONY : turtlebot_navigation/CMakeFiles/move_base.dir/clean
+
+# clean rule for target.
+clean: turtlebot_navigation/CMakeFiles/move_base.dir/clean
 
 .PHONY : clean
 
