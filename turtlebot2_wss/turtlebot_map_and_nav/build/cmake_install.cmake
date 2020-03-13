@@ -117,11 +117,12 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build/gtest/cmake_install.cmake")
+  include("/home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build/pcd_scan_registration/cmake_install.cmake")
   include("/home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build/odom_logger/cmake_install.cmake")
   include("/home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build/stigmergy_planner/cmake_install.cmake")
   include("/home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build/trajectory_control/cmake_install.cmake")
-  include("/home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build/turtlebot_octomap/cmake_install.cmake")
   include("/home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build/turtlebot_navigation/cmake_install.cmake")
+  include("/home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build/turtlebot_octomap/cmake_install.cmake")
 
 endif()
 

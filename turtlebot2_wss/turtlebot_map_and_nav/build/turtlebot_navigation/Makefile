@@ -56,6 +56,16 @@ CMAKE_BINARY_DIR = /home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/bu
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -68,17 +78,6 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -90,26 +89,27 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
 
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
+# Special rule for the target test
+test/fast: test
 
-.PHONY : list_install_components/fast
+.PHONY : test/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
 
-# Special rule for the target install/strip
-install/strip/fast: install/strip
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
 
-.PHONY : install/strip/fast
+.PHONY : rebuild_cache/fast
 
 # Special rule for the target install/local
 install/local: preinstall
@@ -122,16 +122,16 @@ install/local/fast: install/local
 
 .PHONY : install/local/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
 
-# Special rule for the target test
-test/fast: test
+# Special rule for the target install/strip
+install/strip/fast: install/strip
 
-.PHONY : test/fast
+.PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -166,136 +166,88 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/rule:
-	cd /home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/rule
-.PHONY : turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/rule
+turtlebot_navigation/CMakeFiles/laser_footprint_filter.dir/rule:
+	cd /home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot_navigation/CMakeFiles/laser_footprint_filter.dir/rule
+.PHONY : turtlebot_navigation/CMakeFiles/laser_footprint_filter.dir/rule
 
 # Convenience name for target.
-move_base_msgs_generate_messages_cpp: turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/rule
+laser_footprint_filter: turtlebot_navigation/CMakeFiles/laser_footprint_filter.dir/rule
 
-.PHONY : move_base_msgs_generate_messages_cpp
+.PHONY : laser_footprint_filter
 
 # fast build rule for target.
-move_base_msgs_generate_messages_cpp/fast:
-	cd /home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build && $(MAKE) -f turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/build.make turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/build
-.PHONY : move_base_msgs_generate_messages_cpp/fast
+laser_footprint_filter/fast:
+	cd /home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build && $(MAKE) -f turtlebot_navigation/CMakeFiles/laser_footprint_filter.dir/build.make turtlebot_navigation/CMakeFiles/laser_footprint_filter.dir/build
+.PHONY : laser_footprint_filter/fast
 
 # Convenience name for target.
-turtlebot_navigation/CMakeFiles/move_base.dir/rule:
-	cd /home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot_navigation/CMakeFiles/move_base.dir/rule
-.PHONY : turtlebot_navigation/CMakeFiles/move_base.dir/rule
+turtlebot_navigation/CMakeFiles/twist_to_differential_drive.dir/rule:
+	cd /home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot_navigation/CMakeFiles/twist_to_differential_drive.dir/rule
+.PHONY : turtlebot_navigation/CMakeFiles/twist_to_differential_drive.dir/rule
 
 # Convenience name for target.
-move_base: turtlebot_navigation/CMakeFiles/move_base.dir/rule
+twist_to_differential_drive: turtlebot_navigation/CMakeFiles/twist_to_differential_drive.dir/rule
 
-.PHONY : move_base
+.PHONY : twist_to_differential_drive
 
 # fast build rule for target.
-move_base/fast:
-	cd /home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build && $(MAKE) -f turtlebot_navigation/CMakeFiles/move_base.dir/build.make turtlebot_navigation/CMakeFiles/move_base.dir/build
-.PHONY : move_base/fast
+twist_to_differential_drive/fast:
+	cd /home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build && $(MAKE) -f turtlebot_navigation/CMakeFiles/twist_to_differential_drive.dir/build.make turtlebot_navigation/CMakeFiles/twist_to_differential_drive.dir/build
+.PHONY : twist_to_differential_drive/fast
 
-# Convenience name for target.
-turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_eus.dir/rule:
-	cd /home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_eus.dir/rule
-.PHONY : turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_eus.dir/rule
+src/laser_footprint_filter.o: src/laser_footprint_filter.cpp.o
 
-# Convenience name for target.
-move_base_msgs_generate_messages_eus: turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_eus.dir/rule
-
-.PHONY : move_base_msgs_generate_messages_eus
-
-# fast build rule for target.
-move_base_msgs_generate_messages_eus/fast:
-	cd /home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build && $(MAKE) -f turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_eus.dir/build.make turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_eus.dir/build
-.PHONY : move_base_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/rule:
-	cd /home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/rule
-.PHONY : turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-move_base_msgs_generate_messages_lisp: turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : move_base_msgs_generate_messages_lisp
-
-# fast build rule for target.
-move_base_msgs_generate_messages_lisp/fast:
-	cd /home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build && $(MAKE) -f turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/build.make turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/build
-.PHONY : move_base_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-turtlebot_navigation/CMakeFiles/move_base_gencfg.dir/rule:
-	cd /home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot_navigation/CMakeFiles/move_base_gencfg.dir/rule
-.PHONY : turtlebot_navigation/CMakeFiles/move_base_gencfg.dir/rule
-
-# Convenience name for target.
-move_base_gencfg: turtlebot_navigation/CMakeFiles/move_base_gencfg.dir/rule
-
-.PHONY : move_base_gencfg
-
-# fast build rule for target.
-move_base_gencfg/fast:
-	cd /home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build && $(MAKE) -f turtlebot_navigation/CMakeFiles/move_base_gencfg.dir/build.make turtlebot_navigation/CMakeFiles/move_base_gencfg.dir/build
-.PHONY : move_base_gencfg/fast
-
-# Convenience name for target.
-turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_nodejs.dir/rule
-.PHONY : turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-move_base_msgs_generate_messages_nodejs: turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : move_base_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-move_base_msgs_generate_messages_nodejs/fast:
-	cd /home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build && $(MAKE) -f turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_nodejs.dir/build.make turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_nodejs.dir/build
-.PHONY : move_base_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_py.dir/rule:
-	cd /home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_py.dir/rule
-.PHONY : turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-move_base_msgs_generate_messages_py: turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_py.dir/rule
-
-.PHONY : move_base_msgs_generate_messages_py
-
-# fast build rule for target.
-move_base_msgs_generate_messages_py/fast:
-	cd /home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build && $(MAKE) -f turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_py.dir/build.make turtlebot_navigation/CMakeFiles/move_base_msgs_generate_messages_py.dir/build
-.PHONY : move_base_msgs_generate_messages_py/fast
-
-src/NavigationStack.o: src/NavigationStack.cpp.o
-
-.PHONY : src/NavigationStack.o
+.PHONY : src/laser_footprint_filter.o
 
 # target to build an object file
-src/NavigationStack.cpp.o:
-	cd /home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build && $(MAKE) -f turtlebot_navigation/CMakeFiles/move_base.dir/build.make turtlebot_navigation/CMakeFiles/move_base.dir/src/NavigationStack.cpp.o
-.PHONY : src/NavigationStack.cpp.o
+src/laser_footprint_filter.cpp.o:
+	cd /home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build && $(MAKE) -f turtlebot_navigation/CMakeFiles/laser_footprint_filter.dir/build.make turtlebot_navigation/CMakeFiles/laser_footprint_filter.dir/src/laser_footprint_filter.cpp.o
+.PHONY : src/laser_footprint_filter.cpp.o
 
-src/NavigationStack.i: src/NavigationStack.cpp.i
+src/laser_footprint_filter.i: src/laser_footprint_filter.cpp.i
 
-.PHONY : src/NavigationStack.i
+.PHONY : src/laser_footprint_filter.i
 
 # target to preprocess a source file
-src/NavigationStack.cpp.i:
-	cd /home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build && $(MAKE) -f turtlebot_navigation/CMakeFiles/move_base.dir/build.make turtlebot_navigation/CMakeFiles/move_base.dir/src/NavigationStack.cpp.i
-.PHONY : src/NavigationStack.cpp.i
+src/laser_footprint_filter.cpp.i:
+	cd /home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build && $(MAKE) -f turtlebot_navigation/CMakeFiles/laser_footprint_filter.dir/build.make turtlebot_navigation/CMakeFiles/laser_footprint_filter.dir/src/laser_footprint_filter.cpp.i
+.PHONY : src/laser_footprint_filter.cpp.i
 
-src/NavigationStack.s: src/NavigationStack.cpp.s
+src/laser_footprint_filter.s: src/laser_footprint_filter.cpp.s
 
-.PHONY : src/NavigationStack.s
+.PHONY : src/laser_footprint_filter.s
 
 # target to generate assembly for a file
-src/NavigationStack.cpp.s:
-	cd /home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build && $(MAKE) -f turtlebot_navigation/CMakeFiles/move_base.dir/build.make turtlebot_navigation/CMakeFiles/move_base.dir/src/NavigationStack.cpp.s
-.PHONY : src/NavigationStack.cpp.s
+src/laser_footprint_filter.cpp.s:
+	cd /home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build && $(MAKE) -f turtlebot_navigation/CMakeFiles/laser_footprint_filter.dir/build.make turtlebot_navigation/CMakeFiles/laser_footprint_filter.dir/src/laser_footprint_filter.cpp.s
+.PHONY : src/laser_footprint_filter.cpp.s
+
+src/twist_to_differential_drive.o: src/twist_to_differential_drive.cpp.o
+
+.PHONY : src/twist_to_differential_drive.o
+
+# target to build an object file
+src/twist_to_differential_drive.cpp.o:
+	cd /home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build && $(MAKE) -f turtlebot_navigation/CMakeFiles/twist_to_differential_drive.dir/build.make turtlebot_navigation/CMakeFiles/twist_to_differential_drive.dir/src/twist_to_differential_drive.cpp.o
+.PHONY : src/twist_to_differential_drive.cpp.o
+
+src/twist_to_differential_drive.i: src/twist_to_differential_drive.cpp.i
+
+.PHONY : src/twist_to_differential_drive.i
+
+# target to preprocess a source file
+src/twist_to_differential_drive.cpp.i:
+	cd /home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build && $(MAKE) -f turtlebot_navigation/CMakeFiles/twist_to_differential_drive.dir/build.make turtlebot_navigation/CMakeFiles/twist_to_differential_drive.dir/src/twist_to_differential_drive.cpp.i
+.PHONY : src/twist_to_differential_drive.cpp.i
+
+src/twist_to_differential_drive.s: src/twist_to_differential_drive.cpp.s
+
+.PHONY : src/twist_to_differential_drive.s
+
+# target to generate assembly for a file
+src/twist_to_differential_drive.cpp.s:
+	cd /home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build && $(MAKE) -f turtlebot_navigation/CMakeFiles/twist_to_differential_drive.dir/build.make turtlebot_navigation/CMakeFiles/twist_to_differential_drive.dir/src/twist_to_differential_drive.cpp.s
+.PHONY : src/twist_to_differential_drive.cpp.s
 
 # Help Target
 help:
@@ -303,23 +255,21 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install"
-	@echo "... rebuild_cache"
-	@echo "... edit_cache"
 	@echo "... list_install_components"
-	@echo "... install/strip"
-	@echo "... install/local"
-	@echo "... move_base_msgs_generate_messages_cpp"
-	@echo "... move_base"
-	@echo "... move_base_msgs_generate_messages_eus"
+	@echo "... install"
+	@echo "... edit_cache"
 	@echo "... test"
-	@echo "... move_base_msgs_generate_messages_lisp"
-	@echo "... move_base_gencfg"
-	@echo "... move_base_msgs_generate_messages_nodejs"
-	@echo "... move_base_msgs_generate_messages_py"
-	@echo "... src/NavigationStack.o"
-	@echo "... src/NavigationStack.i"
-	@echo "... src/NavigationStack.s"
+	@echo "... laser_footprint_filter"
+	@echo "... rebuild_cache"
+	@echo "... twist_to_differential_drive"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... src/laser_footprint_filter.o"
+	@echo "... src/laser_footprint_filter.i"
+	@echo "... src/laser_footprint_filter.s"
+	@echo "... src/twist_to_differential_drive.o"
+	@echo "... src/twist_to_differential_drive.i"
+	@echo "... src/twist_to_differential_drive.s"
 .PHONY : help
 
 

@@ -13,7 +13,7 @@ TURTLEBOT_SIMULATION_WS=~/ROCO506/turtlebot2_wss/turtlebot_simulation
 source $TURTLEBOT_SIMULATION_WS/devel/setup.bash --extend
   
 TURTLEBOT_MAP_AND_NAV_WS=~/ROCO506/turtlebot2_wss/turtlebot_map_and_nav
-source $TURTLEBOT_MAP_AND_NAV_WS/devel/setup.bash ­­--extend
+source $TURTLEBOT_MAP_AND_NAV_WS/devel/setup.bash --extend
 
 TURTLEBOT_2DSLAM_WS=~/ROCO506/turtlebot2_wss/turtlebot_2dslam
-source $TURTLEBOT_2DSLAM_WS/devel/setup.bash ­­--extend
+source $TURTLEBOT_2DSLAM_WS/devel/setup.bash --extend

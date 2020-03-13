@@ -292,8 +292,21 @@ _catkin_empty_exported_target: cmake_check_build_system
 
 # fast build rule for target.
 _catkin_empty_exported_target/fast:
-	$(MAKE) -f turtlebot_hector_mapping/CMakeFiles/_catkin_empty_exported_target.dir/build.make turtlebot_hector_mapping/CMakeFiles/_catkin_empty_exported_target.dir/build
+	$(MAKE) -f open_karto/CMakeFiles/_catkin_empty_exported_target.dir/build.make open_karto/CMakeFiles/_catkin_empty_exported_target.dir/build
 .PHONY : _catkin_empty_exported_target/fast
+
+#=============================================================================
+# Target rules for targets named karto
+
+# Build rule for target.
+karto: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 karto
+.PHONY : karto
+
+# fast build rule for target.
+karto/fast:
+	$(MAKE) -f open_karto/CMakeFiles/karto.dir/build.make open_karto/CMakeFiles/karto.dir/build
+.PHONY : karto/fast
 
 #=============================================================================
 # Target rules for targets named std_msgs_generate_messages_lisp
@@ -513,6 +526,7 @@ help:
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... _catkin_empty_exported_target"
+	@echo "... karto"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... std_msgs_generate_messages_nodejs"

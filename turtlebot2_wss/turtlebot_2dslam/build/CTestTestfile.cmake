@@ -5,6 +5,7 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs(gtest)
+subdirs(open_karto)
 subdirs(turtlebot_hector_mapping)
 subdirs(turtlebot_gmapping)
 subdirs(turtlebot_slam_karto)
