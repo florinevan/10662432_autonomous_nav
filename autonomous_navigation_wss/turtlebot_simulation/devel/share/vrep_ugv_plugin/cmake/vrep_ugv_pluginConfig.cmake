@@ -1,0 +1,1 @@
+/home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/devel/.private/vrep_ugv_plugin/share/vrep_ugv_plugin/cmake/vrep_ugv_pluginConfig.cmake

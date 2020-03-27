@@ -1,0 +1,2 @@
+open_karto:turtlebot_gmapping:turtlebot_hector_mapping:turtlebot_slam_karto
+-DCATKIN_DEVEL_PREFIX=/home/user001/ROCO506/turtlebot2_wss/turtlebot_2dslam/devel -DCMAKE_INSTALL_PREFIX=/home/user001/ROCO506/turtlebot2_wss/turtlebot_2dslam/install -G Unix Makefiles
