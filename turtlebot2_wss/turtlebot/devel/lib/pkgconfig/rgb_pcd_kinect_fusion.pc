@@ -1,8 +1,0 @@
-prefix=/home/user001/ROCO506/turtlebot2_wss/turtlebot/devel
-
-Name: rgb_pcd_kinect_fusion
-Description: Description of rgb_pcd_kinect_fusion
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/user001/ROCO506/turtlebot2_wss/turtlebot/devel/lib 
-Requires: 

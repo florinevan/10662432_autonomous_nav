@@ -1,6 +1,0 @@
-devel_space: /home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/devel
-install: false
-install_space: /home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/install
-profile: default
-source_space: /home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/src
-workspace: /home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation

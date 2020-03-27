@@ -1,2 +1,0 @@
-nifti_robot_driver_msgs:trajectory_control_msgs
--DCATKIN_DEVEL_PREFIX=/home/user001/ROCO506/turtlebot2_wss/turtlebot_msgs/devel -DCMAKE_INSTALL_PREFIX=/home/user001/ROCO506/turtlebot2_wss/turtlebot_msgs/install -G Unix Makefiles

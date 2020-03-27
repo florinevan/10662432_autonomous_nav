@@ -1,8 +1,0 @@
-prefix=/home/user001/ROCO506/turtlebot2_wss/turtlebot_2dslam/install
-
-Name: turtlebot_hector_mapping
-Description: Description of turtlebot_hector_mapping
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/user001/ROCO506/turtlebot2_wss/turtlebot_2dslam/install/lib 
-Requires: 
