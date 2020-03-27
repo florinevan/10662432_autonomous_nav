@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"trajectory_control\"
 
-CXX_INCLUDES = -I/home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/src/trajectory_control/include -I/home/user001/ROCO506/turtlebot2_wss/turtlebot_msgs/devel/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
+CXX_INCLUDES = -I/home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot_map_and_nav/src/trajectory_control/include -I/home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot_msgs/devel/include -I/home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot_msgs/src/trajectory_control_msgs/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
 

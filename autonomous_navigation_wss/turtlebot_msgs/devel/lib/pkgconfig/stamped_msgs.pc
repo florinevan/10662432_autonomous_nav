@@ -1,0 +1,8 @@
+prefix=/home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot_msgs/devel
+
+Name: stamped_msgs
+Description: Description of stamped_msgs
+Version: 1.0.0
+Cflags: -I/home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot_msgs/devel/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime std_msgs

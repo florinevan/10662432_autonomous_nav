@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/install")
+  set(CMAKE_INSTALL_PREFIX "/home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot_simulation/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/build/vrep_simulation/gtest/gtest/cmake_install.cmake")
+  include("/home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot_simulation/build/vrep_simulation/gtest/gtest/cmake_install.cmake")
 
 endif()
 

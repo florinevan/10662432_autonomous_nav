@@ -1,11 +1,9 @@
 # Define the goal
 nav_msgs/Path path
 ---
-
 # Define the result
 bool done
 ---
-
 # Define a feedback message
 float64 timestep
 geometry_msgs/Twist cmd_vel
@@ -15,5 +13,3 @@ nifti_robot_driver_msgs/FlippersStateStamped flippers_state
 geometry_msgs/Vector3 trajectory_error
 geometry_msgs/Pose virtual_reference_pose
 geometry_msgs/Pose robot_pose
-
-

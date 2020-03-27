@@ -1,8 +1,36 @@
-Symlinking /home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/devel/./setup.bash
-Symlinking /home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/devel/./setup.sh
-Symlinking /home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/devel/./_setup_util.py
-Symlinking /home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/devel/./setup.zsh
-Symlinking /home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/devel/./env.sh
-Symlinking /home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig-version.cmake
-Symlinking /home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig.cmake
-Symlinking /home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/devel/lib/pkgconfig/catkin_tools_prebuild.pc
+Symlinking /home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot_simulation/devel/./env.sh
+Symlinking /home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot_simulation/devel/./local_setup.sh
+Symlinking /home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot_simulation/devel/./setup.zsh
+Symlinking /home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot_simulation/devel/./setup.sh
+Symlinking /home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot_simulation/devel/./cmake.lock
+Symlinking /home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot_simulation/devel/./setup.bash
+Symlinking /home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot_simulation/devel/./local_setup.bash
+Symlinking /home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot_simulation/devel/./_setup_util.py
+Symlinking /home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot_simulation/devel/./local_setup.zsh
+Symlinking /home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot_simulation/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig-version.cmake
+Symlinking /home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot_simulation/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig.cmake
+Symlinking /home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot_simulation/devel/lib/pkgconfig/catkin_tools_prebuild.pc
+Cleaning: (/home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/devel/.private/catkin_tools_prebuild/setup.bash, /home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/devel/./setup.bash)
+Cleaning: (/home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/devel/.private/catkin_tools_prebuild/setup.sh, /home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/devel/./setup.sh)
+Cleaning: (/home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/devel/.private/catkin_tools_prebuild/_setup_util.py, /home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/devel/./_setup_util.py)
+Cleaning: (/home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/devel/.private/catkin_tools_prebuild/setup.zsh, /home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/devel/./setup.zsh)
+Cleaning: (/home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/devel/.private/catkin_tools_prebuild/env.sh, /home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/devel/./env.sh)
+Cleaning: (/home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/devel/.private/catkin_tools_prebuild/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig-version.cmake, /home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig-version.cmake)
+Cleaning: (/home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/devel/.private/catkin_tools_prebuild/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig.cmake, /home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig.cmake)
+Cleaning: (/home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/devel/.private/catkin_tools_prebuild/lib/pkgconfig/catkin_tools_prebuild.pc, /home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/devel/lib/pkgconfig/catkin_tools_prebuild.pc)
+Unlinking: /home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/devel/./setup.bash
+Already unlinked: {}
+Unlinking: /home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/devel/./setup.sh
+Already unlinked: {}
+Unlinking: /home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/devel/./_setup_util.py
+Already unlinked: {}
+Unlinking: /home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/devel/./setup.zsh
+Already unlinked: {}
+Unlinking: /home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/devel/./env.sh
+Already unlinked: {}
+Unlinking: /home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig-version.cmake
+Already unlinked: {}
+Unlinking: /home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig.cmake
+Already unlinked: {}
+Unlinking: /home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/devel/lib/pkgconfig/catkin_tools_prebuild.pc
+Already unlinked: {}

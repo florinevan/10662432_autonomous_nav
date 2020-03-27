@@ -7,7 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/user001/ROCO506/turtlebot2_wss/turtlebot/devel:$CMAKE_PREFIX_PATH"
-export PWD="/home/user001/ROCO506/turtlebot2_wss/turtlebot/build"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/user001/ROCO506/turtlebot2_wss/turtlebot/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/user001/ROCO506/turtlebot2_wss/turtlebot/src:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot/devel:$CMAKE_PREFIX_PATH"
+export PWD="/home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot/build"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot/src:$ROS_PACKAGE_PATH"

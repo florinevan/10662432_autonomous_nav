@@ -1,0 +1,8 @@
+prefix=/home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot_3d_nav/install
+
+Name: path_planner_rviz_wp_plugin
+Description: Description of path_planner_rviz_wp_plugin
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lpath_planner_rviz_wp_plugin
+Requires: class_loader geometry_msgs nav_msgs std_msgs message_filters trajectory_control_msgs patrolling_build_graph_msgs path_planner rviz tf dynamic_reconfigure exploration_msgs wireless_network_msgs

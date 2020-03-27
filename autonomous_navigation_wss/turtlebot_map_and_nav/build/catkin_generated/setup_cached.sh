@@ -7,6 +7,9 @@
 # new environment variables
 
 # modified environment variables
-export LD_LIBRARY_PATH="/home/user001/ROCO506/turtlebot2_wss/turtlebot_2dslam/devel/lib:/home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/devel/lib:/home/user001/ROCO506/turtlebot2_wss/turtlebot_interaction/devel/lib:/home/user001/ROCO506/turtlebot2_wss/turtlebot/devel/lib:/home/user001/ROCO506/turtlebot2_wss/turtlebot_msgs/devel/lib:/home/user001/ws_moveit/devel/lib:/opt/ros/kinetic/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu"
-export PKG_CONFIG_PATH="/home/user001/ROCO506/turtlebot2_wss/turtlebot_2dslam/devel/lib/pkgconfig:/home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/devel/lib/pkgconfig:/home/user001/ROCO506/turtlebot2_wss/turtlebot_interaction/devel/lib/pkgconfig:/home/user001/ROCO506/turtlebot2_wss/turtlebot/devel/lib/pkgconfig:/home/user001/ROCO506/turtlebot2_wss/turtlebot_msgs/devel/lib/pkgconfig:/home/user001/ws_moveit/devel/lib/pkgconfig:/opt/ros/kinetic/lib/pkgconfig:/opt/ros/kinetic/lib/x86_64-linux-gnu/pkgconfig"
-export PWD="/home/user001/ROCO506/turtlebot2_wss/turtlebot_map_and_nav/build"
+export CMAKE_PREFIX_PATH="/home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot_map_and_nav/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot_map_and_nav/devel/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot_map_and_nav/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
+export PWD="/home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot_map_and_nav/build"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot_map_and_nav/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot_map_and_nav/src:$ROS_PACKAGE_PATH"

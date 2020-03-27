@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "turtlebot_slam_karto"
-PROJECT_SPACE_DIR = "/home/user001/ROCO506/turtlebot2_wss/turtlebot_2dslam/install"
+PROJECT_SPACE_DIR = "/home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot_2dslam/install"
 PROJECT_VERSION = "0.0.0"

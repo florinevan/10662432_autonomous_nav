@@ -1,22 +1,22 @@
 
 "use strict";
 
-let ObjectGroupData = require('./ObjectGroupData.js');
-let VisionSensorDepthBuff = require('./VisionSensorDepthBuff.js');
+let ProximitySensorData = require('./ProximitySensorData.js');
 let ForceSensorData = require('./ForceSensorData.js');
 let JointSetStateData = require('./JointSetStateData.js');
+let ObjectGroupData = require('./ObjectGroupData.js');
 let VrepInfo = require('./VrepInfo.js');
+let VisionSensorDepthBuff = require('./VisionSensorDepthBuff.js');
 let ScriptFunctionCallData = require('./ScriptFunctionCallData.js');
 let VisionSensorData = require('./VisionSensorData.js');
-let ProximitySensorData = require('./ProximitySensorData.js');
 
 module.exports = {
-  ObjectGroupData: ObjectGroupData,
-  VisionSensorDepthBuff: VisionSensorDepthBuff,
+  ProximitySensorData: ProximitySensorData,
   ForceSensorData: ForceSensorData,
   JointSetStateData: JointSetStateData,
+  ObjectGroupData: ObjectGroupData,
   VrepInfo: VrepInfo,
+  VisionSensorDepthBuff: VisionSensorDepthBuff,
   ScriptFunctionCallData: ScriptFunctionCallData,
   VisionSensorData: VisionSensorData,
-  ProximitySensorData: ProximitySensorData,
 };

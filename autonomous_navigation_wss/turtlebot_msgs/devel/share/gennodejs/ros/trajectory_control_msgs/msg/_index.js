@@ -1,20 +1,32 @@
 
 "use strict";
 
+let MultiRobotPath = require('./MultiRobotPath.js');
+let PlanningFeedback = require('./PlanningFeedback.js');
+let PlanningGlobalPath = require('./PlanningGlobalPath.js');
+let MultiRobotPose = require('./MultiRobotPose.js');
+let PlanningTask = require('./PlanningTask.js');
+let PlanningStatus = require('./PlanningStatus.js');
 let TrajectoryControlFeedback = require('./TrajectoryControlFeedback.js');
-let TrajectoryControlActionResult = require('./TrajectoryControlActionResult.js');
+let TrajectoryControlAction = require('./TrajectoryControlAction.js');
+let TrajectoryControlActionFeedback = require('./TrajectoryControlActionFeedback.js');
 let TrajectoryControlActionGoal = require('./TrajectoryControlActionGoal.js');
 let TrajectoryControlResult = require('./TrajectoryControlResult.js');
-let TrajectoryControlAction = require('./TrajectoryControlAction.js');
 let TrajectoryControlGoal = require('./TrajectoryControlGoal.js');
-let TrajectoryControlActionFeedback = require('./TrajectoryControlActionFeedback.js');
+let TrajectoryControlActionResult = require('./TrajectoryControlActionResult.js');
 
 module.exports = {
+  MultiRobotPath: MultiRobotPath,
+  PlanningFeedback: PlanningFeedback,
+  PlanningGlobalPath: PlanningGlobalPath,
+  MultiRobotPose: MultiRobotPose,
+  PlanningTask: PlanningTask,
+  PlanningStatus: PlanningStatus,
   TrajectoryControlFeedback: TrajectoryControlFeedback,
-  TrajectoryControlActionResult: TrajectoryControlActionResult,
+  TrajectoryControlAction: TrajectoryControlAction,
+  TrajectoryControlActionFeedback: TrajectoryControlActionFeedback,
   TrajectoryControlActionGoal: TrajectoryControlActionGoal,
   TrajectoryControlResult: TrajectoryControlResult,
-  TrajectoryControlAction: TrajectoryControlAction,
   TrajectoryControlGoal: TrajectoryControlGoal,
-  TrajectoryControlActionFeedback: TrajectoryControlActionFeedback,
+  TrajectoryControlActionResult: TrajectoryControlActionResult,
 };

@@ -1,8 +1,8 @@
-prefix=/home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/devel/.private/catkin_tools_prebuild
+prefix=/home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot_simulation/devel/.private/catkin_tools_prebuild
 
 Name: catkin_tools_prebuild
 Description: Description of catkin_tools_prebuild
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/user001/ROCO506/turtlebot2_wss/turtlebot_simulation/devel/.private/catkin_tools_prebuild/lib 
+Libs: -L${prefix}/lib 
 Requires: 

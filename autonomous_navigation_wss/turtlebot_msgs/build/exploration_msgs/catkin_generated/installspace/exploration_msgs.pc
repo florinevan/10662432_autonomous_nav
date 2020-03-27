@@ -1,0 +1,8 @@
+prefix=/home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot_msgs/install
+
+Name: exploration_msgs
+Description: Description of exploration_msgs
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: geometry_msgs nav_msgs roscpp sensor_msgs std_msgs tf visualization_msgs message_runtime
