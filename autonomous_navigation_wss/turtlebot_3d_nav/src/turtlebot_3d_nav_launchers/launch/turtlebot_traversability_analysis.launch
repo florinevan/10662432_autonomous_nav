@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<launch>
+
+    <arg name="robot_prefix" default="turtlebot1"/>
+
+	<arg name="respawn_value" default="false" /> <!-- boolean: true, false-->
+
+	<node name="traversability_$(arg robot_prefix)" pkg="path_planner" type="traversability" respawn="$(arg respawn_value)" output="screen">
+		<rosparam file="$(find  turtlebot_3d_nav_launchers)/config/path_planner_octomap.yaml" />
+
+		<!-- Input -->
+		<remap from = "/dynjoinpcl" to = "/$(arg robot_prefix)/local_map_normals"/>
+		<remap from = "/obst_point_cloud" to = "/$(arg robot_prefix)/obst_point_cloud"/>
+
+		<!-- Output -->
+		<remap from = "/clustered_pcl/no_wall" to = "/$(arg robot_prefix)/clustered_pcl/no_wall"/>
+		<remap from = "/clustered_pcl/wall" to = "/$(arg robot_prefix)/clustered_pcl/wall"/>
+		<remap from = "/trav/traversability" to = "/$(arg robot_prefix)/trav/traversability"/>
+
+		<remap from = "/trav/clearence" to = "/$(arg robot_prefix)/trav/clearence"/>
+		<remap from = "/trav/density" to = "/$(arg robot_prefix)/trav/density"/>
+		<remap from = "/trav/label" to = "/$(arg robot_prefix)/trav/label"/>
+		<remap from = "/trav/roughness" to = "/$(arg robot_prefix)/trav/roughness"/>
+
+		<remap from = "/clustered_pcl/segmented" to = "/$(arg robot_prefix)/clustered_pcl/segmented"/>
+		<remap from = "/normals_pcl" to = "/$(arg robot_prefix)/normals_pcl"/>
+		<remap from = "/normals_marker" to = "/$(arg robot_prefix)/normals_marker"/>
+	</node>
+</launch>
+
