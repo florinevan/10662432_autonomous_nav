@@ -1,8 +1,0 @@
-prefix=/home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot_msgs/devel
-
-Name: patrolling_build_graph_msgs
-Description: Description of patrolling_build_graph_msgs
-Version: 0.0.0
-Cflags: -I/home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot_msgs/devel/include
-Libs: -L${prefix}/lib 
-Requires: geometry_msgs nav_msgs roscpp sensor_msgs std_msgs tf visualization_msgs message_runtime

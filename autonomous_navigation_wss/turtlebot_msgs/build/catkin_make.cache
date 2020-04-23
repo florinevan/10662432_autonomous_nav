@@ -1,2 +1,0 @@
-exploration_msgs:networkanalysis_msgs:nifti_robot_driver_msgs:patrolling_build_graph_msgs:robot_trajectory_saver_msgs:stamped_msgs:trajectory_control_msgs:wireless_network_msgs
--DCATKIN_DEVEL_PREFIX=/home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot_msgs/devel -DCMAKE_INSTALL_PREFIX=/home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot_msgs/install -G Unix Makefiles

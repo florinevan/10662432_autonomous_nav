@@ -1,2 +1,0 @@
-turtlebot_rviz_launchers
--DCATKIN_DEVEL_PREFIX=/home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot_interaction/devel -DCMAKE_INSTALL_PREFIX=/home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot_interaction/install -G Unix Makefiles

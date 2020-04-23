@@ -1,8 +1,0 @@
-prefix=/home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot_2dslam/devel
-
-Name: turtlebot_slam_karto
-Description: Description of turtlebot_slam_karto
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

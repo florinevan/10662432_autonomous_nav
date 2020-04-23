@@ -1,8 +1,0 @@
-prefix=/home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot_map_and_nav/install
-
-Name: stigmergy_planner
-Description: Description of stigmergy_planner
-Version: 0.0.0
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib 
-Requires: actionlib actionlib actionlib_msgs geometry_msgs interactive_markers trajectory_control_msgs nav_msgs pcl_ros roscpp rospy sensor_msgs std_msgs tf visualization_msgs

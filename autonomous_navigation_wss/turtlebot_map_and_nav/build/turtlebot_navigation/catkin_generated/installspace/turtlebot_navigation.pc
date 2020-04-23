@@ -1,8 +1,0 @@
-prefix=/home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot_map_and_nav/install
-
-Name: turtlebot_navigation
-Description: Description of turtlebot_navigation
-Version: 2.3.7
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: tf roscpp sensor_msgs geometry_msgs nifti_robot_driver_msgs

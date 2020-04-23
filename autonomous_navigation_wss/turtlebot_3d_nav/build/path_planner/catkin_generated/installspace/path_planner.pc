@@ -1,8 +1,0 @@
-prefix=/home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot_3d_nav/install
-
-Name: path_planner
-Description: Description of path_planner
-Version: 0.1.0
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib -lnormalestimation -ldynamicjoinpcl -lclusterpcl -lconversionpcl -ltravanalpcl -lpathplanning -lpathplanningutils
-Requires: dynamic_reconfigure geometry_msgs interactive_markers laser_geometry nav_msgs pcl_ros pcl_conversions roscpp rospy std_msgs tf trajectory_control_msgs actionlib actionlib_msgs trajectory_control_msgs robot_trajectory_saver_msgs wireless_network_msgs networkanalysis_msgs

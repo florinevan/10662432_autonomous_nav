@@ -1,6 +1,0 @@
-devel_space: /home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot_simulation/devel
-install: false
-install_space: /home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot_simulation/install
-profile: default
-source_space: /home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot_simulation/src
-workspace: /home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot_simulation

@@ -1,4 +1,0 @@
-# generated from genmsg/cmake/pkg-msg-paths.cmake.develspace.in
-
-set(patrolling_build_graph_msgs_MSG_INCLUDE_DIRS "/home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot_msgs/src/patrolling_build_graph_msgs/msg")
-set(patrolling_build_graph_msgs_MSG_DEPENDENCIES geometry_msgs;sensor_msgs;std_msgs;visualization_msgs)

@@ -1,2 +1,0 @@
-set(exploration_msgs_MESSAGE_FILES "/home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot_msgs/src/exploration_msgs/msg/ExplorationRobotMessage.msg;/home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot_msgs/src/exploration_msgs/msg/ExplorationPriorityPoint.msg;/home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot_msgs/src/exploration_msgs/msg/ExplorationPriorityActions.msg")
-set(exploration_msgs_SERVICE_FILES "")
