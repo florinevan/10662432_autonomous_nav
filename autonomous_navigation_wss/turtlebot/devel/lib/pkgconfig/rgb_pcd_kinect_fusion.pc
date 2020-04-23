@@ -1,8 +1,0 @@
-prefix=/home/florine_van/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot/devel
-
-Name: rgb_pcd_kinect_fusion
-Description: Description of rgb_pcd_kinect_fusion
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
