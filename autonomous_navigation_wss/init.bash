@@ -50,7 +50,7 @@ source devel/setup.bash
 cd $NAV_WSS/turtlebot_2dslam
 catkin_make
 source devel/setup.bash
-cd ~
+cd $NAV_WSS
 
 #Cmake turtlebot_3d_nav
 #cd $NAV_WSS/turtlebot_3d_nav

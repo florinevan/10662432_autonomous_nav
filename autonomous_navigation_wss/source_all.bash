@@ -18,5 +18,5 @@ source $TURTLEBOT_MAP_AND_NAV_WS/devel/setup.bash --extend
 TURTLEBOT_2DSLAM_WS=~/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot_2dslam
 source $TURTLEBOT_2DSLAM_WS/devel/setup.bash --extend
 
-TURTLEBOT_3D_NAV_WS=~/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot_3d_nav
-source $TURTLEBOT_3D_NAV_WS/devel/setup.bash --extend
+#TURTLEBOT_3D_NAV_WS=~/10662432_autonomous_nav/autonomous_navigation_wss/turtlebot_3d_nav
+#source $TURTLEBOT_3D_NAV_WS/devel/setup.bash --extend
